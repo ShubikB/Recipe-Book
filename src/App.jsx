@@ -1,6 +1,6 @@
 import "./App.css"
 import RecipeCard from "./RecipeCard.jsx"
-import Greetings from "./greetings.jsx"
+import Hero from "./hero.jsx"
 
 // array of object of the recipes
 const recipes = [
@@ -133,7 +133,7 @@ const recipes = [
 const App = () => {
   return (
     <>
-      <Greetings userName='Shubik' />
+      <Hero />
       <div className='w-full h-full flex flex-wrap justify-center item-center'>
         {recipes.map((dish) => (
           <RecipeCard name={dish.name} image={dish.image} />

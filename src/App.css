@@ -9,3 +9,12 @@ body {
   border-radius: 30px;
   overflow: hidden;
 }
+.hero {
+  background-image: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  width: 100vw;
+  /* max-width: 1440px; */
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
