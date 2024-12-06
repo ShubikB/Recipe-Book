@@ -1,26 +1,11 @@
 body {
-  background: rgb(23, 15, 17);
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-.recipeCard {
-  background-color: rgb(141, 120, 31);
-  margin: 10px;
-  padding: 10px;
-}
-
-.recipeImage {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  border: 5px rgb(255, 0, 0) solid;
-}
-
-.greet-wrapper {
-  margin: 80px 0px;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+.hasbulla-gif {
+  border-radius: 30px;
+  overflow: hidden;
 }

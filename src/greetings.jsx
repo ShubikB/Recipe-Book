@@ -1,8 +1,7 @@
 const Greetings = (props) => {
   return (
-    <div className='greet-wrapper flex  justify-center item-center'>
-      <h1 className=''>Hello! {props.userName}</h1>
-      <h3>Find Best Recipe & Best food</h3>
+    <div className='greet-wrapper text-center text-5xl font-bold m-10'>
+      <h1 className='greeting text-orange-400'>Hello Hungry</h1>
     </div>
   )
 }
