@@ -134,9 +134,10 @@ const App = () => {
   return (
     <>
       <Hero />
+
       <div className='w-full h-full flex flex-wrap justify-center item-center'>
-        {recipes.map((dish) => (
-          <RecipeCard name={dish.name} image={dish.image} />
+        {recipes.map((recipe) => (
+          <RecipeCard name={recipe.name} image={recipe.image} recipe={recipe} />
         ))}
       </div>
     </>
