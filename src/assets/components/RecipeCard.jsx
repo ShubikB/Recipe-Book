@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "./App.css"
 import RecipePopup from "./RecipePopup"
 
 const RecipeCard = ({ recipe }) => {

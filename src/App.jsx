@@ -1,6 +1,7 @@
 import "./App.css"
-import RecipeCard from "./RecipeCard.jsx"
-import Hero from "./hero.jsx"
+import Hero from "./assets/components/hero"
+import RecipeCard from "./assets/components/RecipeCard"
+// import RecipePopup from "./assets/components/RecipePopup"
 
 // array of object of the recipes
 const recipes = [
@@ -126,6 +127,163 @@ const recipes = [
       "Sauté garlic and shrimp/chicken in oil until cooked. Push to the side.",
       "Add eggs, scramble, then mix with meat.",
       "Add noodles, sauces, tamarind paste, and sugar. Toss until coated. Top with peanuts and lime.",
+    ],
+  },
+  {
+    name: "Momo",
+    image:
+      "https://images.immediate.co.uk/production/volatile/sites/30/2021/04/Chicken-momos-1ed8358.jpg?resize=900%2C471",
+    origin: "Nepal",
+    timeToCook: "40 minutes",
+    ingredients: [
+      "250g minced chicken or vegetables",
+      "1 onion, finely chopped",
+      "2 garlic cloves, minced",
+      "1 tsp ginger paste",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "200g flour",
+      "Water for dough",
+    ],
+    steps: [
+      "Mix flour and water to form a soft dough. Rest for 20 minutes.",
+      "Combine filling ingredients (minced chicken/veg, onion, garlic, ginger, soy sauce, sesame oil).",
+      "Roll dough into small circles, fill with mixture, and seal edges to form dumplings.",
+      "Steam for 10-12 minutes and serve with dipping sauce.",
+    ],
+  },
+  {
+    name: "Dal Bhat",
+    image:
+      "https://cdn.shopify.com/s/files/1/0223/0981/files/Dal_Bhat_in_Nepal_lentils_and_rice_served_on_brass_trays.jpg?v=1618366744",
+    origin: "Nepal",
+    timeToCook: "50 minutes",
+    ingredients: [
+      "1 cup lentils (dal)",
+      "1 tsp turmeric",
+      "Salt to taste",
+      "2 cups cooked rice (bhat)",
+      "Vegetables for curry or stir-fry",
+      "Pickles and chutneys for serving",
+    ],
+    steps: [
+      "Cook lentils with water, turmeric, and salt until soft.",
+      "Prepare vegetable curry or stir-fry as a side.",
+      "Serve rice with dal, vegetables, and pickles.",
+    ],
+  },
+  {
+    name: "Butter Chicken",
+    image:
+      "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/chicken-butter-masala-recipe.jpg",
+    origin: "India",
+    timeToCook: "1 hour",
+    ingredients: [
+      "500g chicken, boneless",
+      "1 cup yogurt",
+      "2 tsp garam masala",
+      "1 tsp turmeric",
+      "1 tsp red chili powder",
+      "3 tbsp butter",
+      "1 cup tomato puree",
+      "1/2 cup cream",
+      "Salt to taste",
+    ],
+    steps: [
+      "Marinate chicken with yogurt, garam masala, turmeric, and chili powder for 30 minutes.",
+      "Cook chicken in butter until golden. Remove and set aside.",
+      "In the same pan, sauté tomato puree and spices. Add cream and cooked chicken.",
+      "Simmer until sauce thickens. Serve with naan or rice.",
+    ],
+  },
+  {
+    name: "Chole Bhature",
+    image:
+      "https://en-media.thebetterindia.com/uploads/2022/08/294156779_1082267416022212_8006411537588067133_n-1_11zon-1660981126.jpg",
+    origin: "India",
+    timeToCook: "1 hour",
+    ingredients: [
+      "1 cup chickpeas, soaked overnight",
+      "2 onions, chopped",
+      "2 tomatoes, pureed",
+      "2 tsp garam masala",
+      "1 tsp cumin seeds",
+      "2 cups all-purpose flour",
+      "1/4 cup yogurt",
+      "Salt to taste",
+      "Oil for frying",
+    ],
+    steps: [
+      "Boil chickpeas until soft. Sauté onions, tomatoes, and spices to make a thick curry.",
+      "Make dough with flour, yogurt, and salt. Rest for 20 minutes.",
+      "Roll dough into circles and deep fry until puffed.",
+      "Serve chickpea curry with hot bhature.",
+    ],
+  },
+  {
+    name: "Saag Aloo",
+    image: "https://rainbowplantlife.com/wp-content/uploads/2024/01/Hero-2-scaled.jpg",
+    origin: "India",
+    timeToCook: "35 minutes",
+    ingredients: [
+      "500g spinach",
+      "3 potatoes, diced",
+      "1 tsp cumin seeds",
+      "1 tsp turmeric",
+      "1 tsp chili powder",
+      "1 onion, chopped",
+      "2 garlic cloves, minced",
+      "Salt to taste",
+    ],
+    steps: [
+      "Boil potatoes until tender.",
+      "Sauté cumin seeds, onions, garlic, and spices in oil.",
+      "Add spinach and cooked potatoes. Cook until spinach wilts and combines.",
+      "Serve as a side dish or with rice.",
+    ],
+  },
+  {
+    name: "Chicken Biryani",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSq7xy12Os8TQS61-RKVGtoDoUHt7JqZojsg&s",
+    origin: "India",
+    timeToCook: "1.5 hours",
+    ingredients: [
+      "2 cups basmati rice",
+      "500g chicken or vegetables",
+      "1 cup yogurt",
+      "2 onions, fried",
+      "2 tsp biryani masala",
+      "Saffron soaked in milk",
+      "4 tbsp ghee",
+      "Salt to taste",
+    ],
+    steps: [
+      "Marinate chicken/vegetables with yogurt, biryani masala, and salt.",
+      "Partially cook rice with whole spices. Layer rice, chicken, and fried onions.",
+      "Drizzle with saffron milk and ghee. Cook on low heat until flavors blend.",
+      "Serve hot with raita.",
+    ],
+  },
+  {
+    name: "Pani Puri",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLf40t2rOzTqiIY0Br3Pnmm3WmSP9e09ggA&s",
+    origin: "India",
+    timeToCook: "45 minutes",
+    ingredients: [
+      "20 puris (fried puffed bread)",
+      "1 cup boiled potatoes, mashed",
+      "1/2 cup boiled chickpeas",
+      "1 cup tamarind chutney",
+      "1 cup mint water (with spices)",
+      "Salt to taste",
+    ],
+    steps: [
+      "Prepare filling by mixing mashed potatoes, chickpeas, and spices.",
+      "Make mint water by blending mint, tamarind, and spices with water.",
+      "Fill puris with potato mixture and pour mint water over them.",
+      "Serve immediately.",
     ],
   },
 ]

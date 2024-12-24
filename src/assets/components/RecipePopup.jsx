@@ -1,9 +1,9 @@
 const RecipePopup = ({ recipe, onClose }) => {
   return (
-    <div className='popupWrapperTransparent fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'>
-      <div className='bg-white p-5 rounded-lg w-[400px] text-center'>
+    <div className='popupWrapperTransparent fixed inset-0 bg-black bg-opacity-50 flex items-center overflow-y-auto justify-center z-50'>
+      <div className=' container-md bg-white p-7 rounded-lg  '>
         <img
-          className='rounded-lg w-full h-52 object-cover mb-4'
+          className='rounded-lg w-full h-72 object-cover mb-4'
           src={recipe.image}
           alt={recipe.name}
         />
